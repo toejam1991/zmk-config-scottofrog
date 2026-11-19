@@ -551,7 +551,7 @@
                             &kp ASTERISK   &kp N7 &kp N8     &kp N9 &kp MINUS
                             &kp SLASH   &kp N4 &kp N5     &kp N6 &kp PLUS
                             &kp N0      &kp N1 &kp N2     &kp N3 &kp PERIOD
-                &kp SPACE   &num_lock_off        &to SYMBOL        &trans       &trans
+                &kp SPACE   &num_layer_off        &to SYMBOL        &trans       &trans
             >;
         }; 
 
