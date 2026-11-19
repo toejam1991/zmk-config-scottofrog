@@ -535,8 +535,8 @@
 
         number_layer {
             bindings = <
-                            &kp ASTERISK   &kp N7 &kp N8     &kp N9 &none
-                            &kp SLASH   &kp N4 &kp N5     &kp N6 &kp ASTERISK
+                            &kp ASTERISK   &kp N7 &kp N8     &kp N9 &kp MINUS
+                            &kp SLASH   &kp N4 &kp N5     &kp N6 &kp PLUS
                             &kp N0      &kp N1 &kp N2     &kp N3 &none
                 &kp SPACE   &to DEFAULT        &to SYMBOL        &trans       &trans
             >;
