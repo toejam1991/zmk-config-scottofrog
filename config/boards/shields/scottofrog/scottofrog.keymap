@@ -12,10 +12,16 @@
 
 / {
 
-    num_layer: num_layer {
+    num_layer_on: num_layer_on {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings = <&kp LOCKING_NUM>, <&to NUMBER>;
+        };
+
+    num_layer_off: num_layer_off {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LOCKING_NUM>, <&to DEFAULT>;
         };
 
     combos {
@@ -536,7 +542,7 @@
                           &kp F       &kp A &kp R       &kp W &kp P 
                           &kp O       &kp E &kp H       &kp T &kp D 
                           &kp U       &kp I &kp N       &kp S &kp Y 
-                &kp SPACE &num_layer        &sl SYMBOL        &kp ENTER &sk RSHIFT
+                &kp SPACE &num_layer_on     &sl SYMBOL        &kp ENTER &sk RSHIFT
             >;
         };
 
@@ -545,7 +551,7 @@
                             &kp ASTERISK   &kp N7 &kp N8     &kp N9 &kp MINUS
                             &kp SLASH   &kp N4 &kp N5     &kp N6 &kp PLUS
                             &kp N0      &kp N1 &kp N2     &kp N3 &kp PERIOD
-                &kp SPACE   &to DEFAULT        &to SYMBOL        &trans       &trans
+                &kp SPACE   &num_lock_off        &to SYMBOL        &trans       &trans
             >;
         }; 
 
