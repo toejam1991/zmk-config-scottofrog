@@ -526,7 +526,7 @@
 
         default_layer {
             bindings = <
-                          &kp Q       &kp A &kp R       &kp W &kp P 
+                          &kp Q       &kp X &kp R       &kp W &kp P 
                           &kp O       &kp E &kp H       &kp T &kp D 
                           &kp U       &kp I &kp N       &kp S &kp Y 
                 &kp SPACE &to NUMBER        &to SYMBOL        &kp ENTER &sk RSHIFT
