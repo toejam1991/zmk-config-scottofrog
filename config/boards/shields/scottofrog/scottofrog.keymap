@@ -11,10 +11,9 @@
 #define COMBO_TIMEOUT 50
 
 / {
-
-&sk {
-    quick-release;
-};
+   &sk {
+       quick-release;
+    };
     combos {
         compatible = "zmk,combos";
 
