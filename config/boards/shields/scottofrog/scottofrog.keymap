@@ -15,19 +15,11 @@
     num_layer_on: num_layer_on {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings
-            = <&macro_tap &kp LOCKING_NUM>
-            , <&macro_tap &to NUMBER>
-            ;
         };
 
     num_layer_off: num_layer_off {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings
-            = <&macro_tap &kp LOCKING_NUM>
-            , <&macro_tap &to DEFAULT>
-            ;
         };
 
     combos {
