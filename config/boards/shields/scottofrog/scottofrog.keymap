@@ -16,7 +16,7 @@
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings
-            = <&macro_tap &kp LOCKING_NUM>
+            = <&macro_tap &kp KP_NUM>
             , <&macro_tap &to NUMBER>
             ;
         };
@@ -25,8 +25,17 @@
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings
-            = <&macro_tap &kp LOCKING_NUM>
+            = <&macro_tap &kp KP_NUM>
             , <&macro_tap &to DEFAULT>
+            ;
+        };
+
+    num_to_symbol: num_to_symbol {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp KP_NUM>
+            , <&macro_tap &to SYMBOL>
             ;
         };
 
@@ -493,7 +502,7 @@
         special_num_lock_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <16 4>;
-            bindings = <&kt LOCKING_NUM>;
+            bindings = <&kp KP_NUM>;
             layers = <SYMBOL>;
         }; 
 
@@ -564,7 +573,7 @@
                             &kp ASTERISK   &kp N7 &kp N8     &kp N9 &kp MINUS
                             &kp SLASH   &kp N4 &kp N5     &kp N6 &kp PLUS
                             &kp N0      &kp N1 &kp N2     &kp N3 &kp PERIOD
-                &kp SPACE   &num_layer_off        &to SYMBOL        &trans       &trans
+                &kp SPACE   &num_layer_off        &num_to_symbol        &trans       &trans
             >;
         }; 
 
@@ -573,7 +582,7 @@
                           &kp QUESTION      &kp AMPERSAND   &kp ASTERISK         &kp COLON        &kp SEMICOLON
                           &kp SLASH         &kp EXCLAMATION &kp MINUS            &kp AT           &kp UNDERSCORE
                           &kp DOUBLE_QUOTES &kp LESS_THAN   &kp LEFT_PARENTHESIS &kp LEFT_BRACKET &kp LEFT_BRACE 
-                &kp SPACE &to NUMBER                        &to DEFAULT                           &trans         &trans
+                &kp SPACE &num_layer_on                     &to DEFAULT                           &trans         &trans
             >;
         }; 
         
