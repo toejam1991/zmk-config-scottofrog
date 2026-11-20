@@ -51,7 +51,7 @@
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <15 0>;
             bindings = <&kp TAB>;
-            layers = <DEFAULT>;
+            layers = <DEFAULT NUMBER>;
         };
 
         letters_single_quote_combo {
